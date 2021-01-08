@@ -1,0 +1,117 @@
+.img-banner {
+  max-width: 380px;
+  /* max-height: 460px; */
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 60px;
+}
+
+.summary {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.summary-tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));
+  grid-gap: 1rem;
+  max-width: 392px;
+}
+
+.summary-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+}
+
+.wrapper-tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  width: 184px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  transition: 200ms;
+}
+
+.wrapper-tools:hover {
+  transform: scale(1.03);
+}
+
+.img-tools {
+  margin-top: 1rem;
+  width: 40px;
+  text-align: center;
+}
+
+.card-review {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  padding: 20px;
+}
+
+.card-review > i {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+.card-review > h3 {
+  margin-bottom: 15px;
+}
+
+.card-review-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-review-footer > img {
+  width: 50px;
+}
+.card-review-footer > h4 {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 780px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 10px 0 30px;
+  }
+  .img-banner {
+    max-width: 240px;
+  }
+  .headline-banner {
+    padding-top: 30px;
+    text-align: center;
+  }
+  .summary-tools {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .summary {
+    padding-top: 30px;
+    grid-template-columns: 1fr;
+  }
+  .summary-tools {
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin: 0 auto 30px auto;
+  }
+  .summary-info {
+    padding: 0 15px;
+  }
+}
